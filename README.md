@@ -1,4 +1,5 @@
 # Ransom_Sample
+※Training on Administrator Privilege
  
 ## How to Copy
 ```bash
