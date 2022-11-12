@@ -8,7 +8,7 @@ git clone https://github.com/schecthellraiser606/Ramsom_Go_Sample.git
 ## Configure and Compile
 ```bash
 # Go to folder
-$ cd rangoware
+$ cd Ransom_Go_Sample
 
 # Generate a AES crypto key
 $ go run keygen/keygen.go
