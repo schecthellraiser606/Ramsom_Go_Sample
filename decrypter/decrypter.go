@@ -1,30 +1,21 @@
 package main
 
 import (
-	"bufio"
 	"crypto/aes"
 	"crypto/cipher"
 	"encoding/hex"
 	"fmt"
 	"io/ioutil"
 	"os"
-	"strings"
 
 	"github.com/schecthellraiser606/Ramsom_Go_Sample/explorer"
 )
 
 func main() {
+	decryptKey := "" // Insert starting directory
 	dir := "" // Insert starting directory
 
-	fmt.Print("Decrypter \nInsert decrypt key:")
-
-	reader := bufio.NewReader(os.Stdin)
-
-	text, _ := reader.ReadString('\n')
-
-	text = strings.Replace(text, "\n", "", -1)
-
-	key, err := hex.DecodeString(text)
+	key, err := hex.DecodeString(decryptKey)
 
 	if err != nil {
 		fmt.Println("Wrong key.")
