@@ -9,7 +9,7 @@ import (
 	"io/ioutil"
 	"os"
 
-	"../explorer"
+	"github.com/schecthellraiser606/Ramsom_Go_Sample/explorer"
 )
 
 func main() {
