@@ -9,7 +9,7 @@ git clone https://github.com/schecthellraiser606/Ramsom_Go_Sample.git
 ## Configure and Compile
 ```bash
 # Go to folder
-$ cd Ransom_Go_Sample
+$ cd Ramsom_Go_Sample
 
 # Generate a AES crypto key
 $ go run keygen/keygen.go
