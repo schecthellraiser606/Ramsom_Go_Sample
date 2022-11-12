@@ -10,7 +10,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/LuanSilveiraSouza/rangoware/explorer"
+	"github.com/schecthellraiser606/Ramsom_Go_Sample/explorer"
 )
 
 func main() {

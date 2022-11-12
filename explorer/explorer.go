@@ -10,15 +10,16 @@ import (
 func MapFiles(dir string) []string {
 	var files []string
 	var root string
+	var env_name string = "ProgramFiles(x86)"
 
 	if runtime.GOOS == "windows" {
-		root = os.Getenv("USERPROFILE")
+		root = os.Getenv(env_name)
 	} else {
 		root = os.Getenv("HOME")
 	}
 
 	if dir == "" {
-		root += "/Downloads/Test"
+		root += "/Lhasa"
 	} else {
 		root += dir
 	}
