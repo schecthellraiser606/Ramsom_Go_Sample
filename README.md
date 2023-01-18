@@ -1,5 +1,9 @@
 # Ransom_Sample
 ※Training on Administrator Privilege
+## Attention
+This is the code we created for verification purposes
+<br/>
+Please do not abuse it
  
 ## How to Copy
 ```bash
