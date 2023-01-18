@@ -1,5 +1,7 @@
 package main
 
+//タイミングによってはたまに回らなくなる
+
 import (
 	"crypto/aes"
 	"crypto/cipher"
